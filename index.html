@@ -21,14 +21,15 @@
        font-size:13px;line-height:1.6;font-weight:500;-webkit-print-color-adjust:exact;print-color-adjust:exact;
        max-width:730px;margin:0 auto;padding:22px 18px 46px}
 
-  /* HERO NEGRO — el lockup neón brilla aquí */
   .hero{background:#080808;border-radius:14px;padding:30px 20px 22px;text-align:center;margin-bottom:8px}
   .hero img{height:174px;width:auto;display:block;margin:0 auto}
   .hero .tag{font-family:'Quicksand',sans-serif;font-size:10px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#8FB9C9;margin-top:10px}
   .hero .gradline{height:3px;border-radius:3px;background:var(--grad);margin:14px auto 0;width:78%}
 
-  h1{font-size:25px;font-weight:800;letter-spacing:-0.6px;color:var(--navy);margin:22px 0 4px;line-height:1.13}
-  .lead{font-size:15px;font-weight:700;color:var(--navy)}
+  h1{font-size:25px;font-weight:800;letter-spacing:-0.6px;color:var(--navy);margin:22px 0 6px;line-height:1.13}
+  .lead{font-size:14.5px;font-weight:600;color:var(--ink)}
+  .lead b{color:var(--navy)}
+  .quote{font-family:'Quicksand',sans-serif;font-style:italic;color:var(--navy);font-weight:600}
   p{margin:8px 0}
   .over{font-family:'Quicksand',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--blue);margin:0 0 7px;display:flex;align-items:center;gap:8px}
   .over::before{content:"";width:16px;height:3px;border-radius:2px;background:var(--blue)}
@@ -38,7 +39,7 @@
   .card h2{font-size:17px;font-weight:800;letter-spacing:-0.3px;color:var(--navy);margin:0 0 9px}
 
   ul{margin:9px 0;padding:0;list-style:none}
-  li{margin:10px 0;padding-left:26px;position:relative}
+  li{margin:11px 0;padding-left:26px;position:relative}
   li::before{content:"✓";position:absolute;left:0;top:0;color:var(--green);font-weight:800;font-size:14px}
   li b{color:var(--navy);font-weight:700}
 
@@ -52,6 +53,8 @@
   td.k{font-weight:600;color:var(--ink)}
   td.v{text-align:right;font-weight:800;color:var(--navy);white-space:nowrap;font-size:17px}
   .note{font-size:11px;color:var(--muted);font-weight:500;line-height:1.5}
+  .anchor{font-size:12px;color:var(--muted);font-weight:600;margin-top:4px}
+  .anchor b{color:var(--green)}
 
   .card.guarantee{border-left-color:var(--red)}
   .card.guarantee h2{color:var(--red)}
@@ -66,6 +69,7 @@
   .cta::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:4px;background:var(--grad)}
   .cta b{font-size:18px;color:#fff;font-weight:800}
   .cta .hl{color:#8DF0A6;font-weight:700}
+  .cta p{margin:7px 0 0;font-size:13px}
 
   .sign{font-size:14px;margin-top:16px}
   .sign b{color:var(--navy)}
@@ -90,20 +94,22 @@
 
   <h1>Tu asistente de IA a medida</h1>
   <p class="lead">Hola Carmen,</p>
-  <p>Le he dado forma a lo que podemos montar para tu gestoría. Antes de abrir esto ya has visto, con tus propios ojos, lo que cuesta en el mercado un sistema así. Con esa referencia delante, aquí va mi propuesta.</p>
+  <p>Llevas el negocio, el equipo y, ahora, la parte fiscal — todo a la vez y casi siempre a contrarreloj. En nuestra charla lo resumiste tú mejor que nadie: <span class="quote">«si yo tengo esa ayuda, yo me libero»</span>. De eso va exactamente esto.</p>
+  <p>Le he dado forma a lo que podemos montar para tu gestoría. Ya has visto lo que cuesta en el mercado un sistema así; con esa referencia delante, aquí va mi propuesta.</p>
 
   <div class="card">
     <div class="over">Lo que te voy a montar</div>
     <h2>Tu día a día sin el agobio — y disparando tu productividad</h2>
-    <p>Un <b>asistente de IA propio de tu gestoría</b>, hecho a tu medida, que se ocupa de lo mecánico para que tú decidas:</p>
+    <p>Un <b>asistente de IA propio de tu gestoría</b>, hecho a tu medida, que se ocupa de lo mecánico para que tú hagas lo que solo tú puedes hacer: decidir, asesorar y cuidar a tus clientes.</p>
     <ul>
-      <li><b>Altas y bajas sin la carrera.</b> Un formulario recoge los datos y la IA te los estructura y prepara la ficha; tú revisas y validas. <b>Si tu A3 lo permite, conectamos directamente con él</b>; si no, te lo dejo en Excel listo para importar.</li>
-      <li><b>Escritos y correos con TUS modelos de siempre.</b> Despidos, llamamientos, burofax, correos a clientes… redactados con tu estilo y la normativa vigente. Tú revisas y, con un OK desde el móvil, <b>se envían solos desde tu propio correo</b>.</li>
-      <li><b>Tu histórico convertido en el cerebro del asistente.</b> Tus años de modelos, escritos y criterio pasan a ser el <b>conocimiento base</b> del que bebe el asistente para imitarte: protegido y solo tuyo. Cuanto más tuyo, más se parece a ti.</li>
-      <li><b>Vigilancia del IRPF de tus trabajadores.</b> Lee las nóminas, detecta desviaciones y te deja el aviso en Trello por empresa, antes de que se conviertan en un problema a fin de año.</li>
-      <li><b>Tu asistente de consultas, siempre a mano.</b> Le preguntas el día a día —estado de un trámite, datos de un trabajador, una duda fiscal, un caso de no residentes— y te responde con tu conocimiento + la norma actual. Un cerebro interno de la gestoría.</li>
+      <li><b>Altas y bajas, sin la carrera contra el reloj.</b> Te llegan a cualquier hora y no pueden esperar a una hora de corte. El sistema recoge los datos por un formulario, te los estructura y te deja la ficha lista en el momento; tú solo revisas y validas. <b>Si tu A3 lo permite, conectamos directamente con él</b>; si no, te lo dejo en Excel listo para importar.</li>
+      <li><b>Tus escritos y correos, con TU forma de hacerlos.</b> Despidos, llamamientos, burofax, correos a clientes… redactados con tu estilo y la normativa al día. Tú revisas y, con un OK desde el móvil, <b>se envían solos desde tu propio correo</b>.</li>
+      <li><b>Tus modelos, blindados y solo tuyos.</b> Tus cartas, tus pliegos, tu criterio de años son el activo real de tu gestoría — y aquí dejan de poder irse en un pendrive ajeno. Tu histórico vive en un espacio que administras <b>solo tú</b>, y a la vez se convierte en el <b>cerebro</b> del que bebe el asistente para imitarte. Tu conocimiento, protegido y trabajando para ti.</li>
+      <li><b>El IRPF que no ves venir, vigilado.</b> Un trabajador con nóminas variables puede acabar el año debiendo cientos de euros que nadie detectó a tiempo. El sistema revisa las nóminas cada mes, detecta la desviación y te deja el aviso en Trello por empresa — antes de que sea un problema.</li>
+      <li><b>Un asistente al que preguntar, siempre a mano.</b> Una duda fiscal, un caso de no residentes, el estado de un trámite, los datos de un trabajador… le preguntas y te responde con tu conocimiento y la norma actual. No tienes que absorber cada curso entero: lo consultas justo cuando lo necesitas.</li>
+      <li><b>Una mano para formar a tu equipo.</b> Cuando entra alguien nuevo, el método se explica casi solo: el asistente conoce tus flujos de principio a fin, así no tienes que estar encima de todo mientras tú también avanzas.</li>
     </ul>
-    <div class="rule">La IA prepara; <b>tú decides siempre</b>. Nada se envía ni se ejecuta sin tu visto bueno.</div>
+    <div class="rule">La IA prepara; <b>tú decides siempre</b>. En tu sector, esa última palabra humana no es un freno: es tu garantía.</div>
   </div>
 
   <div class="card">
@@ -111,10 +117,11 @@
     <h2>Una fracción de lo que cuesta en el mercado</h2>
     <table>
       <tr><th>Concepto</th><th style="text-align:right">Precio fundador</th></tr>
-      <tr><td class="k">Montaje del sistema (puesta en marcha)<br><span class="note">Configuración completa: asistente a medida, conexión con tus datos (y con A3 si es posible), automatización de altas/bajas, redacción con tu histórico, aviso de IRPF, asistente de consultas y montaje en servidor. Pago: 2.500 € al arrancar + 2.500 € al terminar (≈ 1 – 1,5 meses).</span></td><td class="v">5.000 €</td></tr>
+      <tr><td class="k">Montaje del sistema (puesta en marcha)<br><span class="note">Configuración completa: asistente a medida, conexión con tus datos (y con A3 si es posible), automatización de altas/bajas, redacción con tu histórico, vigilancia del IRPF, asistente de consultas y montaje en servidor. Pago: 2.500 € al arrancar + 2.500 € al terminar (≈ 1 – 1,5 meses).</span></td><td class="v">5.000 €</td></tr>
       <tr><td class="k">Cuota mensual<br><span class="note"><b>350 €</b> de servicio (mantenimiento, perfilado del asistente, tus consultas y seguir dándole forma) + <b>150 €</b> de infraestructura (servidor + IA: el consumo real del asistente cada mes).</span></td><td class="v">500 €/mes</td></tr>
     </table>
-    <p class="note"><b>Contrato de 6 meses.</b> Esos 6 meses son los que de verdad dejan el sistema pulido y a tu medida. <b>El primer mes pagas el arranque (2.500 €) + la infraestructura (150 €)</b>; el servicio de 350 € empieza el 2º mes. Al cabo de los 6 meses lo hablamos: si surgen nuevas necesidades, si quieres ampliarlo o si prefieres seguir por tu cuenta — <b>sin ataduras</b>.</p>
+    <p class="anchor"><b>Compáralo con lo que acabas de ver en el mercado:</b> esto es una fracción.</p>
+    <p class="note"><b>Contrato de 6 meses.</b> Son los que de verdad dejan el sistema pulido y a tu medida. <b>El primer mes pagas el arranque (2.500 €) + la infraestructura (150 €)</b>; el servicio de 350 € empieza el 2º mes. Al cabo de los 6 meses lo hablamos: si surgen nuevas necesidades, si quieres ampliarlo o si prefieres seguir por tu cuenta — <b>sin ataduras</b>.</p>
   </div>
 
   <div class="card guarantee">
@@ -127,8 +134,8 @@
   <div class="card deal">
     <div class="over" style="color:var(--blue)">Por qué este precio</div>
     <h2>Un precio fundacional — y por qué te lo hago</h2>
-    <p>Este precio es <b>fundacional y no se va a repetir</b>. Acabas de ver lo que cuesta esto en el mercado; lo que te propongo está muy por debajo, y solo lo hago en esta primera fase.</p>
-    <p>¿Por qué? Porque <b>quiero abrir hueco con un caso de éxito real en el ámbito de las gestorías</b>. Ya trabajo esto; lo que busco ahora es un referente en tu sector — y me encantaría que fueras tú. Mi propósito es simple: que esto te funcione de verdad y que quedes encantada. Me voy a volcar para que así sea.</p>
+    <p>Este precio es <b>fundacional y no se va a repetir</b>. Lo que te propongo está muy por debajo del mercado, y solo lo hago en esta primera fase.</p>
+    <p>¿Por qué? Porque <b>quiero un caso de éxito real en el ámbito de las gestorías</b>. Ya trabajo esto; lo que busco ahora es un referente en tu sector — y me encantaría que fueras tú. Mi propósito es el de siempre en HUMAN·IA: <b>quitarte de encima lo mecánico para devolverte tiempo y cabeza</b> para lo que de verdad importa. Y para eso necesito que esto salga impecable; me vuelco en ello.</p>
     <p style="margin-bottom:4px">Y cuando lo tengas funcionando, lo estés usando y <b>estés contenta con el resultado</b>, lo único que te pediré:</p>
     <div class="ask"><span class="n">1</span><span>Que me <b>recomiendes a un par de gestorías</b> a las que esto les pueda servir.</span></div>
     <div class="ask"><span class="n">2</span><span>Que me dejes <b>enseñar el sistema funcionando</b> a otros posibles clientes — <b>nunca tus datos</b>, solo cómo trabaja.</span></div>
@@ -136,7 +143,7 @@
 
   <div class="cta">
     <b>¿Arrancamos?</b>
-    <p style="margin:7px 0 0">Si te encaja, me dices y <span class="hl">empezamos esta semana</span>. Los flujos que apuntaste son justo el material con el que arranco.</p>
+    <p>Si te encaja, me dices y <span class="hl">empezamos esta semana</span>. Los flujos que apuntaste son justo el material con el que arranco — y en un mes lo notas.</p>
   </div>
 
   <p class="sign">Un abrazo,<br><b>Xavi Riera</b> · <span class="q">Human·ia<span class="dot">.</span></span></p>
