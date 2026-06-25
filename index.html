@@ -12,7 +12,7 @@
   @page { size: A4; margin: 11mm 12mm; }
   :root{
     --navy:#1B3A5C; --dark:#0B1B2E; --bg:#F4F8FC; --card:#fff;
-    --red:#FF1F3D; --red-bg:#FFEEF1; --green:#2D9A4D; --green-bg:#E9F6EE; --teal:#27686A;
+    --red:#FF1F3D; --red-bg:#FFEEF1; --green:#2D9A4D; --green-bg:#E9F6EE; --teal:#2A4C8F;
     --ink:#1f2a34; --muted:#66737f; --line:#E1E9F2;
     --grad:linear-gradient(90deg,#1B03A3,#213586,#27686A,#2D9A4D,#33CD31,#39FF14);
   }
@@ -24,9 +24,8 @@
 
   /* HERO OSCURO — el logo neón brilla aquí */
   .hero{background:#080808;border-radius:14px;padding:30px 20px 22px;text-align:center;position:relative;overflow:hidden;margin-bottom:8px}
-  .hero::before{content:"";position:absolute;top:-34%;left:50%;transform:translateX(-50%);width:420px;height:300px;
-    background:radial-gradient(ellipse at center, rgba(57,255,20,.22), rgba(45,154,77,.30) 35%, rgba(39,104,106,.16) 58%, rgba(8,8,8,0) 75%);pointer-events:none}
-  .hero img{height:122px;width:auto;display:block;margin:0 auto;position:relative;z-index:1;filter:drop-shadow(0 0 11px rgba(57,255,20,.55)) drop-shadow(0 0 22px rgba(45,154,77,.4)) drop-shadow(0 0 40px rgba(39,104,106,.3))}
+  
+  .hero img{height:174px;width:auto;display:block;margin:0 auto;position:relative;z-index:1}
   .hero .tag{font-family:'Quicksand',sans-serif;font-size:10px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#8FB9C9;margin-top:8px;position:relative;z-index:1}
   .hero .gradline{height:3px;border-radius:3px;background:var(--grad);margin:14px auto 0;width:78%;position:relative;z-index:1}
 
@@ -34,7 +33,7 @@
   .lead{font-size:15px;font-weight:700;color:var(--navy)}
   p{margin:8px 0}
   .over{font-family:'Quicksand',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--teal);margin:0 0 7px;display:flex;align-items:center;gap:8px}
-  .over::before{content:"";width:16px;height:3px;border-radius:2px;background:var(--grad)}
+  .over::before{content:"";width:16px;height:3px;border-radius:2px;background:var(--teal)}
 
   .card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--navy);
         border-radius:0 9px 9px 0;padding:16px 20px;margin:14px 0;box-shadow:0 2px 9px rgba(11,27,46,.08);break-inside:avoid}
@@ -79,7 +78,7 @@
 
   @media(max-width:640px){
     body{padding:16px 13px 34px}
-    .hero{padding:24px 14px 18px}.hero img{height:92px}
+    .hero{padding:24px 14px 18px}.hero img{height:124px}
     h1{font-size:21px}.card{padding:14px 16px}td.v{font-size:15px}
   }
 </style>
